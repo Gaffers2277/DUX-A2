@@ -7,11 +7,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Space so content does not sit under fixed navbar */
-body {
-    padding-top: 200px;
-}
-
 /* Navbar */
 .cafe-navbar {
     display: flex;
@@ -130,11 +125,22 @@ body {
     border: none;
     border-radius: 40px;
     background-color: #B38E65;
-    min-height: 850px;
+    min-height: 875px;
     padding: 20px;
 }
 
-.info-card .card-body {
+.info-card .card-info-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontal centering */
+    justify-content: center; /* vertical centering if card has height */
+    text-align: center;
+    height: 100%;
+    width: auto;
+    gap: 20px;
+}
+
+.card-desc-body {
     display: flex;
     flex-direction: column;
     align-items: center;   /* horizontal centering */
@@ -153,8 +159,8 @@ body {
     width: auto;
 }
 
-.card-body {
-    width: 400px;
+.info-card {
+    width: 600px;
 }
 
 .info-card .card-title {
@@ -196,7 +202,8 @@ body {
     border-radius: 20px;
     background-color: #B38E65;
     border: none;
-    padding: 10px;
+    padding: 10px 0px;
+    height: 350px;
 }
 
 .small-card h5 {
@@ -204,19 +211,8 @@ body {
     font-weight: bold;
 }
 
-.small-card-desc-card {
-    border: none;
-    border-radius: 16px;
-    background-color: #E8D1A7;
-    padding: 20px;
-}
-
-
 /* Responsive */
 @media (max-width: 991.98px) {
-    body {
-        padding-top: 280px;
-    }
 
     .cafe-navbar {
         flex-direction: column;
@@ -239,10 +235,6 @@ body {
     .center-pills {
         justify-content: center;
         flex-wrap: wrap;
-    }
-
-    .icon-nav {
-        justify-content: center;
     }
 
     .image-container,
