@@ -105,6 +105,7 @@ body {
 .icon-nav img {
     width: 24px;
     height: 24px;
+    filter: brightness(0);
     display: block;
 }
 
@@ -228,6 +229,20 @@ body {
     border-radius: 16px;
 }
 
+.card-header-row {
+    display: flex;
+    align-items: center;   /* vertically align */
+    justify-content: center; /* keep centered like your design */
+    gap: 10px;
+    padding: 0px 0px 20px;
+}
+
+.card-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0);
+}
+
 .small-card-desc-body {
     display: flex;
     flex-direction: column;
@@ -245,7 +260,9 @@ body {
     background-color: #E8D1A7;
     padding: 20px;
     width: auto;
+    height: 80%;
 }
+
 
 /* ########################## */
 /* Responsive */
