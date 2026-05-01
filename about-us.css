@@ -1,0 +1,217 @@
+/* ########################## */
+/* Page */
+/* ########################## */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E8D1A7;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ########################## */
+/* Navbar */
+/* ########################## */
+
+.cafe-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 20px 24px;
+    background-color: transparent;
+}
+
+.nav-left,
+.nav-right {
+    flex: 0 0 220px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    justify-content: flex-start;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
+
+/* Logo */
+.logo-image {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* Center area */
+.nav-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.center-pills {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    padding: 10px 14px;
+    list-style: none;
+    background-color: #B38E65;
+    border-radius: 40px;
+}
+
+.center-pills .nav-link {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 10px 20px;
+    transition: 0.2s ease;
+}
+
+.center-pills .nav-link:hover {
+    color: #000000;
+    background-color: #d8bb8f;
+}
+
+.center-pills .nav-link.active {
+    background-color: #E8D1A7;
+    color: #000000;
+}
+
+/* Right icon bar */
+.icon-nav {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    width: 180px;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    background-color: #B38E65;
+    border-radius: 40px;
+}
+
+.icon-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon-nav img {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0);
+    display: block;
+}
+
+/* ########################## */
+/* Home Page Content */
+/* ########################## */
+
+.main-content {
+    padding: 32px;
+}
+
+.image-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card */
+
+.small-card {
+    border-radius: 20px;
+    background-color: #B38E65;
+    border: none;
+    height: 350px;
+}
+
+.small-card h5 {
+    margin: 0;
+    font-weight: bold;
+    padding: 0px 0px 10px;
+}
+
+.mission-small-card-text {
+    font-size: 14px;
+}
+
+.about-image-container {
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.small-card-desc-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontal centering */
+    justify-content: center; /* vertical centering if card has height */
+    text-align: center;
+    height: 240px;
+    width: auto;
+    gap: 20px;
+}
+
+.small-card-desc-card {
+    border: none;
+    border-radius: 16px;
+    background-color: #E8D1A7;
+    padding: 20px;
+    width: auto;
+}
+
+/* ########################## */
+/* Responsive */
+/* ########################## */
+
+@media (max-width: 991.98px) {
+
+    .cafe-navbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+
+    .nav-left,
+    .nav-center,
+    .nav-right {
+        flex: unset;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-left {
+        justify-content: center;
+    }
+
+    .center-pills {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .image-container,
+    .info-card {
+        min-height: auto;
+        height: auto;
+    }
+
+    .image-container {
+        height: 350px;
+    }
+}
