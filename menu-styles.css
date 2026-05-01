@@ -1,7 +1,6 @@
 /* ########################## */
 /* Page */
 /* ########################## */
-
 html,
 body {
     margin: 0;
@@ -15,7 +14,6 @@ body {
 /* ########################## */
 /* Navbar */
 /* ########################## */
-
 .cafe-navbar {
     display: flex;
     align-items: center;
@@ -25,6 +23,7 @@ body {
     background-color: transparent;
 }
 
+/* Left and right equal widths keep center truly centered */
 .nav-left,
 .nav-right {
     flex: 0 0 220px;
@@ -108,144 +107,75 @@ body {
     display: block;
 }
 
+
 /* ########################## */
-/* Home Page Content */
+/* Menu Content */
 /* ########################## */
 
-.main-content {
-    padding: 32px;
-}
-
-.image-container {
-    width: 100%;
-    height: 500px;
-    overflow: hidden;
-    border-radius: 40px;
-}
-
-.main-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* Card */
-.info-card {
-    border: none;
-    border-radius: 40px;
-    background-color: #B38E65;
-    min-height: 875px;
-    padding: 20px;
-}
-
-.info-card .card-info-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* horizontal centering */
-    justify-content: center; /* vertical centering if card has height */
-    text-align: center;
-    height: 100%;
-    width: auto;
-    gap: 20px;
-}
-
-.card-desc-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* horizontal centering */
-    justify-content: center; /* vertical centering if card has height */
-    text-align: center;
-    height: 100%;
-    width: auto;
-    gap: 20px;
-}
-
-.card-desc-card {
-    border: none;
-    border-radius: 16px;
-    background-color: #E8D1A7;
-    padding: 20px;
-    width: auto;
-}
-
-.info-card {
-    width: 600px;
-}
-
-.info-card .card-title {
-    font-size: 32px;
+.menu-card h2 {
+    margin: 0;
     font-weight: bold;
-    margin-bottom: 20px;
-    color: #280B03;
+    padding: 10px 0px;
 }
 
-.card-image {
-    width: auto;
-    height: 500px;
-    border-radius: 16px;
+.menu-card-body {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    background-color: #E8D1A7;
+    border-radius: 30px;
+    padding: 15px;
 }
 
-.info-card .card-text {
-    font-size: 18px;
-    color: #280B03;
-    line-height: 1.6;
+.menu-image {
+    width: 70px;
+    height: auto;
+    border-radius: 35px;
 }
 
-.custom-btn {
+.menu-text h5{
+    font-weight: bold;
+}
+
+.menu-button {
     background-color: #E8D1A7;
     color: #000000;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
     border: none;
     border-radius: 30px;
-    padding: 10px 150px;
+    padding: 10px 20px;
     margin-top: 10px;
+    margin-bottom: 20px;
+    min-width: 200px;
 }
 
-.custom-btn:hover {
+.menu-button:hover {
     color: #E8D1A7;
     background-color: #3a1408;
 }
 
-.small-card {
+.small-menu-card h2 {
+    margin: 0;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.menu-card,
+.small-menu-card {
+    width: 100%;
     border-radius: 20px;
     background-color: #B38E65;
     border: none;
     padding: 10px 0px;
-    height: 350px;
 }
 
-.small-card h5 {
-    margin: 0;
-    font-weight: bold;
-}
 
-.about-image-container {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 16px;
-}
 
-.small-card-desc-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* horizontal centering */
-    justify-content: center; /* vertical centering if card has height */
-    text-align: center;
-    height: 100%;
-    width: auto;
-    gap: 20px;
-}
 
-.small-card-desc-card {
-    border: none;
-    border-radius: 16px;
-    background-color: #E8D1A7;
-    padding: 20px;
-    width: auto;
-}
+
+
+
 
 /* ########################## */
 /* Responsive */
