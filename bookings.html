@@ -6,7 +6,7 @@
     <title>Cafe Beans</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bookings.css">
     <link rel="icon" type="image/png" href="assets/light-logo.png">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -63,84 +63,89 @@
     </header>
 
 <main class="container-fluid main-content">
-            <form action="/action_page.php" class="needs-validation">
-            <div class="p-3" style="background-color:#c9b795;">
-                <div class="row">
-                    <div class="col">
-                        <label for="fname" class="form-label">First Name:</label>
-                        <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-                    <div class="col">
-                        <label for="lname" class="form-label">Last Name:</label>
-                        <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-                </div>
+    <form action="/action_page.php" class="validate-fields">
+    <div class="p-3">
+        <div class="row">
+            <div class="col">
+                <label for="fname" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="col">
+                <label for="lname" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+        </div>
 
-                <div class="row">
-                    <div class="col">
-                        <label for="email" class="form-label">Email Address:</label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-                    <div class="col">
-                        <label for="tel" class="form-label">Phone Number:</label>
-                        <input type="tel" class="form-control" id="tel" placeholder="Enter Phone Number" name="tel" required>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col">
+                <label for="email" class="form-label">Email Address:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="col">
+                <label for="tel" class="form-label">Phone Number:</label>
+                <input type="tel" class="form-control" id="tel" placeholder="Enter Phone Number" name="tel" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+        </div>
+            <div class="venue-form-floating">
+            <label for="sel1" class="form-label">Venue:</label>
+            <select class="form-select" id="sel1" name="sellist">
+                <option>Garden</option>
+                <option>Front Room</option>
+                <option>Back Room</option>
+            </select>
+        </div>
 
-                <div class="mb-3"></div>
-                    <div class="row">
-                        <div class="col">
-                        <label for="date" class="form-label">Pick a time and date for your booking.</label>
-                        <input type="datetime-local" class="form-control" placeholder="Please enter a date" name="email">
-                        </div>
-                    </div>
-                <div class="mb-3"></div>
-                <div class="form-floating">
-                    <select class="form-select" id="sel1" name="sellist">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </select>
-                    <small id="passwordHelpBlock" class="form-text text-muted">
-                        To make a booking of more than 10 people, please call us on: 01923 812000
-                    </small>
-                    <label for="sel1" class="form-label">How many people would you like to book for? :</label>
+        <div class="mb-3"></div>
+            <div class="row">
+                <div class="col">
+                <label for="date" class="form-label">Pick a time and date for your booking.</label>
+                <input type="datetime-local" class="form-control" placeholder="Please enter a date" name="email">
                 </div>
-                <div class="mb-3"></div>
-                <div class="form-floating">
-                    <select class="form-select" id="sel1" name="sellist">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                    </select>
-                    <label for="sel1" class="form-label">How many hours would you like to book for? :</label>
-                </div>
+            </div>
+        <div class="mb-3"></div>
+        <div class="form-floating">
+            <select class="form-select" id="sel1" name="sellist">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <label for="sel1" class="form-label">How many people would you like to book for? :</label>
+        </div>
+        <div class="mb-3"></div>
+        <div class="form-floating">
+            <select class="form-select" id="sel1" name="sellist">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+            <label for="sel1" class="form-label">How many hours would you like to book for? :</label>
+        </div>
 
-                <div class="mb-3 mt-3">
-                    <label for="comment">Special Requirements:</label>
-                    <textarea class="form-control" rows="3" id="comment" name="text"></textarea>
-                </div>
-                <a href="successful_booking.html" class="btn btn-light" style="color:#542e1a;">Book Now</button>
-                </div>
-        </form>
+        <div class="mb-3 mt-3">
+            <label for="comment">Description:</label>
+            <textarea class="form-control" rows="3" id="comment" name="text"></textarea>
+        </div>
+        <button href="successful_booking.html" class="btn btn-light" style="color:#542e1a;">Book Now</button>
+        </div>
+    </form>
 </main>
 
 </body>
