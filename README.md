@@ -1,6 +1,31 @@
 # Cafe Beans
 ![Home Page](assets/showcase.png)
 
+# Contents
+
+- [Introduction](#introduction)
+- [User Profiles](#user-profiles)
+- [Theme - Online Menu & Click and Collect](#theme---online-menu--click-and-collect)
+- [Theme - About Page](#theme---about-page)
+- [Theme - Event Bookings](#theme---event-bookings)
+- [Justification & Analysis](#justification--analysis)
+  - [Business Justification](#business-justification)
+  - [Competitive Analysis](#competitive-analysis)
+- [Design Choices](#design-choices)
+  - [Colour Pallette](#colour-pallette)
+  - [Icons](#icons)
+- [Wireframe](#wireframe)
+  - [Home Page](#home-page)
+  - [Home Page Dark Mode](#home-page-dark-mode)
+  - [Menu](#menu)
+  - [Menu Basket](#menu-basket)
+  - [Events](#events)
+  - [Event Form](#event-form)
+  - [Event Form Error Messages](#event-form-error-messages)
+  - [About Us](#about-us)
+- [Disclaimers](#disclaimers)
+- [References](#references)
+
 ---
 # User Profiles
 ## First Time Visitor
