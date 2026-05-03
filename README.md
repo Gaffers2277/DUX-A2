@@ -27,6 +27,11 @@
 - [References](#references)
 
 ---
+# Introduction
+
+This repository is for the Designing User Experience Second Assignment. The website is designed for a cafe with an menu with online ordering, event bookings and about us information.
+
+---
 # User Profiles
 ## First Time Visitor
 
